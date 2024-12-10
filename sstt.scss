@@ -1,0 +1,81 @@
+// Variables
+$primary-color: #6f4e37;
+$secondary-color: #f4f1ea;
+$accent-color: #d1a054;
+$font-family: 'Arial', sans-serif;
+
+// Global Styles
+body {
+    font-family: $font-family;
+    background-color: $secondary-color;
+    margin: 0;
+    padding: 0;
+}
+
+// Header Styles
+header {
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    padding: 2rem;
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+// Navigation
+.navbar {
+    background-color: $primary-color;
+
+    .nav-link {
+        color: $secondary-color;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}
+
+// About Section
+#about {
+    text-align: center;
+
+    img {
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+}
+
+// Form Styles
+.form-container {
+    background-color: $secondary-color;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    label {
+        font-weight: bold;
+    }
+
+    button {
+        background-color: $accent-color;
+        border: none;
+
+        &:hover {
+            background-color: darken($accent-color, 10%);
+        }
+    }
+}
+
+// Footer Styles
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    padding: 1rem;
+}
